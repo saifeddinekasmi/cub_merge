@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   draw_minimap.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oufisaou <oufisaou@student.42.fr>          +#+  +:+       +#+        */
+/*   By: skasmi <skasmi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/20 11:58:11 by oufisaou          #+#    #+#             */
-/*   Updated: 2023/01/17 17:13:17 by oufisaou         ###   ########.fr       */
+/*   Updated: 2023/01/24 05:46:52 by skasmi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,7 +116,7 @@ void put_big_player_circle(t_all *cub)
         {
             x_big = cos(angle) * h + cub->player.x;
             y_big = sin(angle) * h + cub->player.y;
-            my_mlx_pixel_put2(cub, x_big, y_big, 0x00FFFFFF);
+            my_mlx_pixel_put2(cub, x_big, y_big, 0x00FF00);
             angle++;
         }
         h++;
